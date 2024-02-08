@@ -1,3 +1,14 @@
+// Initialize Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyC9Vd3UhLwmEVxYLIgGrI4YrOVyeVmAOys",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "catchananimal",
+    storageBucket: "nam5 (us-central)",
+    messagingSenderId: "800777167785",
+    appId: "YOUR_APP_ID"
+};
+firebase.initializeApp(firebaseConfig);
+
 const animals = ['Dog', 'Cat', 'Rabbit', 'Bird', 'Fish'];
 let currentUser;
 
