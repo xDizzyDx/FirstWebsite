@@ -8,9 +8,23 @@
 </head>
 <body>
     <h1>Animal Catcher Game</h1>
-    <button onclick="catchAnimal()">Catch Animal</button>
+    
+    <div id="auth-container">
+        <button onclick="toggleAuth()">Login/Sign Up</button>
+        <div id="auth" style="display: none;">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="signIn()">Sign In</button>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+    </div>
+
+    <button onclick="catchAnimal()" id="catch-btn" style="display: none;">Catch Animal</button>
     <p id="result"></p>
 
+    <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
